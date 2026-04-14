@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Busca de Infos sobre paises</title>
+</head>
+<body>
+<h1>Paises &amp; suas infos</h1>
+<p>Digite o nome do País que desejas buscar(Em inglês): </p>
+
+<form onsubmit="event.preventDefault(); window.location.href='/procurar/' + this.name.value;">
+    <input type="text" name="name" placeholder="ex: Poland,Brazil...">
+    <button type="submit">Buscar</button>
+</form>
+
+</body>
+</html>
